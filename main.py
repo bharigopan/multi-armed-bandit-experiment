@@ -95,9 +95,9 @@ def experiment(K, N):
     for s in test_solvers:
         s.run(N)
 
-#    plt.plot(test_solvers, names)
+    plt.plot(test_solvers, names)
 #    plt.savefig("results_K{}_N{}.png".format(K, N))
-#    plt.show()  
+    plt.show()  
 
 
 if __name__ == '__main__':
