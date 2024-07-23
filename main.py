@@ -1,4 +1,4 @@
-import matplotlib  # noqa
+import matplotlib as plt # noqa
 matplotlib.use('Agg')  # noqa
 
 import matplotlib.pyplot as plt
@@ -93,7 +93,7 @@ def experiment(K, N):
     for s in test_solvers:
         s.run(N)
 
-    plot_results(test_solvers, names, "results_K{}_N{}.png".format(K, N))
+    plt.plot(test_solvers, names, "results_K{}_N{}.png".format(K, N))
 
 
 if __name__ == '__main__':
