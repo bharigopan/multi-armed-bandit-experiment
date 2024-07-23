@@ -69,9 +69,9 @@ def experiment(K, N):
     """
 
     b = BernoulliBandit(K)
-    print "Randomly generated Bernoulli bandit has reward probabilities:\n", b.probas
-    print "The best machine has index: {} and proba: {}".format(
-        max(range(K), key=lambda i: b.probas[i]), max(b.probas))
+    print ("Randomly generated Bernoulli bandit has reward probabilities:\n", b.probas)
+    print ("The best machine has index: {} and proba: {}".format(
+        max(range(K), key=lambda i: b.probas[i]), max(b.probas)))
 
     test_solvers = [
         # EpsilonGreedy(b, 0),
