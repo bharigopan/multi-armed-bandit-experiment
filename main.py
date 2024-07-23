@@ -1,4 +1,6 @@
-import matplotlib as plt # noqa
+import matplotlib
+import matplotlib.pyplot as plt
+
 matplotlib.use('Agg')  # noqa
 
 import matplotlib.pyplot as plt
